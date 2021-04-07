@@ -1,15 +1,44 @@
 <html>
-    <head>
-        <style>
-            html, body, canvas {
-                margin: 0;
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <canvas></canvas>
-        <script type="module" src="./src/index.mjs"></script>
-    </body>
+	<head>
+		<style>
+			html,
+			body,
+			canvas {
+				margin: 0;
+				width: 100%;
+				height: 100%;
+			}
+			/* Tweakpane Theme */
+
+			:root {
+				--tp-base-background-color: hsla(60, 12%, 15%, 0.9);
+				--tp-base-shadow-color: hsla(41, 0%, 0%, 0.3);
+				--tp-button-background-color: rgb(235, 235, 235);
+				--tp-button-background-color-active: hsla(0, 0%, 100%, 1);
+				--tp-button-background-color-focus: hsla(0, 0%, 95%, 1);
+				--tp-button-background-color-hover: hsla(0, 0%, 85%, 1);
+				--tp-button-foreground-color: hsla(0, 0%, 0%, 0.8);
+				--tp-folder-background-color: hsla(0, 0%, 0%, 0.3);
+				--tp-folder-background-color-active: hsla(0, 0%, 0%, 0.6);
+				--tp-folder-background-color-focus: hsla(0, 0%, 0%, 0.5);
+				--tp-folder-background-color-hover: hsla(0, 0%, 0%, 0.4);
+				--tp-folder-foreground-color: hsla(0, 0%, 100%, 0.5);
+				--tp-input-background-color: hsla(0, 0%, 0%, 0.3);
+				--tp-input-background-color-active: hsla(0, 0%, 0%, 0.6);
+				--tp-input-background-color-focus: hsla(0, 0%, 0%, 0.5);
+				--tp-input-background-color-hover: hsla(0, 0%, 0%, 0.4);
+				--tp-input-foreground-color: hsla(0, 0%, 100%, 0.5);
+				--tp-monitor-background-color: hsla(0, 0%, 0%, 0.3);
+				--tp-monitor-foreground-color: hsla(0, 0%, 100%, 0.3);
+				--tp-label-foreground-color: hsla(0, 0%, 100%, 0.5);
+				--tp-separator-color: hsla(0, 0%, 0%, 0.2);
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Local development (faster reloads) -->
+		<!-- <script src="./src/libs/tweakpane-2.2.1.min.js"></script> -->
+
+		<script type="module" src="./src/index.mjs"></script>
+	</body>
 </html>
